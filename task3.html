@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div p {
+      background-color: #0d77da;
+    }
+
+    div h2 {
+      background-color: #b00b69;
+    }
+
+    #test p {
+      background-color: #b5a900;
+    }
+
+    #test h2 {
+      background-color: #000004;
+    }
+
+    .bbb {
+      background-color: #000005;
+    }
+
+    #test .bbb {
+      background-color: #000006;
+    }
+
+    p.bbb {
+      background-color: #000007;
+    }
+
+    h2.bbb {
+      background-color: #000008;
+    }
+
+    #test p.bbb {
+      background-color: #000009;
+    }
+
+    div h2, p {
+      background-color: #00000a;
+    }
+
+    .bbb, .xxx {
+      background-color: #00000b;
+    }
+
+    p.bbb, h2.xxx {
+      background-color: #00000c;
+    }
+
+    #test p.bbb, #test p.xxx {
+      background-color: #00000d;
+    }
+
+    .fff * {
+      background-color: #00000e;
+    }
+
+    .fff p {
+      background-color: #00000f;
+    }
+
+    p.fff {
+      background-color: #000010;
+    }
+
+    .fff .bbb {
+      background-color: #000011;
+    }
+
+    .fff h2.bbb {
+      background-color: #000012;
+    }
+
+    #test a:link, 
+    #test a:visited {
+      text-decoration: none;
+      color: #ff0000;
+    }
+
+    #test a:hover {
+      text-decoration: underline;
+      color: #00c3ff;
+    }
+
+    a.www:link,
+    a.www:visited {
+      text-decoration: underline; /* оно по дефолту подчеркнуто, но раз в задании написано, то ладно */
+      color: #00c3ff;
+    }
+
+    a.www:hover {
+      text-decoration: none;
+    }
+
+    #test a.www:link,
+    #test a.www:visited,
+    #test a.www:hover,
+    #test a.www:active {
+      color: #bada55;
+    }
+
+    .eee a.www:link {
+      color: #10b00b;
+    }
+
+    .eee a.www:visited {
+      color: #1b00b0;
+    }
+
+    .eee a.www:hover {
+      color: #b00b10;
+    }
+
+    .eee a.www:active {
+      color: #b000b5;
+    }
+
+    p > i {
+      color: #00ff00;
+    }
+
+    ul > li {
+      background-color: #fff221;
+    }    
+
+    p > a, a.test {
+      text-decoration: wavy;
+    }
+
+    i + b {
+      opacity: 88.41%;
+    }
+
+    #test b + i {
+      cursor: help;
+    }
+
+    ul + p {
+      text-shadow: none;
+    }
+
+    h1 ~ p {
+      direction: rtl;
+    }
+
+    #test h2 ~ p {
+      will-change: auto;
+    }
+
+    p * i {
+      box-shadow: 5px 5px blue, -10px 10px red, 5px 10px #aaaaaa inset;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Задание1</p>
+    <h2>Задание2</h2>
+  </div>
+  <div id="test">
+    <p>Задание3</p>
+    <h2>Задание4</h2>
+  </div>
+  <div class="bbb">Задание5</div>
+  <div id="test">
+    <div class="bbb">Задание6</div>
+    <p class="bbb">Задание9</p>
+    <p class="xxx">Задание13</p>
+    <a href="#">Задание19</a>
+    <a href="#" class="www">Задание21</a>
+    <i>зад<b>ание</b>27</i>
+  </div>
+  <p class="bbb">Задание7</p>
+  <h2 class="bbb">Задание8</h2>
+  <h2 class="xxx">Задание12</h2>
+  <div class="fff">
+    Задание14
+    <p>Задание15</p>
+    <div class="bbb">Задание17</div>
+    <h2 class="bbb">Задание18</h2>
+  </div>
+  <p class="fff">Задание16</p>
+  <div class="eee">
+    <a href="#" class="www">Задание22</a>
+  </div>
+  <p>Зад<i>ание</i>23</p>
+  <ul>
+    <p>Задание28</p>
+    <li>Задание24</li>
+  </ul>
+  <p>зад<a href="#">ание2</a>5</p>
+  <a href="#" id="test">Задание25</a>
+  <i>за<b>дание</b>26</i>
+  <h1></h1>
+  <p>Задание29</p>
+</body>
+</html>
