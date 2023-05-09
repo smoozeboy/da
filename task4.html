@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .cont {
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .country-name {
+      display: inline-block;
+    }
+
+    .armeniya-flag,
+    .gana-flag {
+      outline: 2px solid rgba(0, 0, 0, 0.5);
+      display: inline-block;
+    }
+
+    .armeniya-flag .stripe {
+      height: 100px;
+      width: 500px;
+    }
+
+    .stripe.red {
+      background-color: #ec2a2c;
+    }
+
+    .stripe.blue {
+      background-color: #1824a3;
+    }
+
+    .stripe.yellow {
+      background-color: #ffb114;
+    }
+    .stripe.green {
+      background-color: #147122;
+    }
+
+
+    .gana-flag {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 300px;
+      width: 500px;
+    }
+
+    .gana-flag .stripe {
+      height: 100px;
+      width: 500px;
+      z-index: 4;
+    }
+
+    .star {
+      translate: -50% -50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%,
+      68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+      background-color: #000000;
+      height: 90px;
+      width: 90px;
+      z-index: 7;
+    }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <div class="armeniya-flag">
+      <div class="stripe red"></div>
+      <div class="stripe blue"></div>
+      <div class="stripe yellow"></div>
+    </div>
+    <p class="country-name">Armeniya</p>
+    <div class="gana-flag">
+      <div class="stripe red"></div>
+      <div class="star"></div>
+      <div class="stripe yellow"></div>
+      <div class="stripe green"></div>
+    </div>
+    <p class="country-name">Gana</p>
+  </div>
+</body>
+</html>
